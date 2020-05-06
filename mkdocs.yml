@@ -3,7 +3,7 @@ theme:
   name: 'material'
   palette:
     primary: 'indigo'
-    accent: 'indigo'
+    accent: 'indigo'    
 markdown_extensions:
    - admonition
    - codehilite:
@@ -12,11 +12,24 @@ markdown_extensions:
    - toc:
        permalink: true
 
+#plugins:
+#    - markdownmermaid
+    
 extra_javascript:
+  - 'javascripts/mathjax.js'
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+ # - 'https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'
+
+
+# can the nav bar be automatically generated? 
+# see https://github.com/mkdocs/mkdocs/issues/1430
 nav:
    - Home: index.md
    - About: about.md
    - Quick guides:
      - howtos/ants_howto.md
      - howtos/freesurfer_howto.md
+     - howtos/troubleshooting_howto.md
+
+
+

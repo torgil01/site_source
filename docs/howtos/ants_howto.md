@@ -2,7 +2,24 @@
 
 ## Apply forward transform
 
-A - > B 
+Inline math not working:$p(x|y) = \frac{p(y|x)p(x)}{p(y)}$, \(p(x|y) = \frac{p(y|x)p(x)}{p(y)}\).
+
+also \$A =  B\$, ss 
+
+
+$$
+A \rightarrow  B
+$$
+
+and
+
+$$
+
+\begin{CD}
+A @>a>> B\\
+\end{CD}
+$$
+
 
 ```
 antsRegistrationSyNQuick.sh -d 3 \
